@@ -1,40 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Frontend Technical Assessment
 
-## Getting Started
+This project is a frontend technical assessment built using **Next.js (App Router)**, **Material-UI (MUI)**, and **Zustand**.  
+All backend data is consumed from the public API: https://dummyjson.com/
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js (App Router)
+- React
+- Material-UI (MUI)
+- Zustand (State Management)
+- DummyJSON API
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Features Implemented
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### Authentication
+- Admin login using DummyJSON Auth API
+- Token stored in Zustand state
+- Protected dashboard routes
+- Logout functionality on all dashboard pages
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Users Management
+- Users list with pagination
+- Search users using API
+- Click on user name to view single user details
+- Navigation to Products page
+- Logout support
 
-## Learn More
+### Products Management
+- Products list in responsive grid layout
+- Product image, price, and title display
+- View single product details
+- Navigation to Users page
+- Logout support
 
-To learn more about Next.js, take a look at the following resources:
+### UI & UX
+- Material-UI based responsive design
+- Clean and readable layouts
+- Dark theme for dashboard pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## DummyJSON Login Credentials
 
-## Deploy on Vercel
+Use the following test credentials for login:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
